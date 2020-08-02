@@ -20,7 +20,7 @@ https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html
 - confirmed cases only
   kernel, precision, recall
   linear, 0.73, 0.90
-  rbf, 0.53, 0.95
+  rbf, 0.53, 0.95  (can imporve to 0.60 with GridSearch)
   poly, 0.51, 0.95
 
 
