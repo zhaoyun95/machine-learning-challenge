@@ -15,11 +15,39 @@ https://www.kaggle.com/nasa/kepler-exoplanet-search-results
 https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html
 
 ### Results
-* svm model
-confirmed cases: precision = 38%; recall = 46%
+* SVM model
+- score: 0.74
+- confirmed cases only
+  kernel, precision, recall
+  linear, 0.73, 0.90
+  rbf, 0.53, 0.95
+  poly, 0.51, 0.95
 
-* deep learning model
+
+
+* Deep Learning model
 confirmed cases: loss = 70%; accuracy = 68%
 
-Both models are not that good, they did not reach 85% accuracy.  Comparatively, deep learning model is better (68% > 46%).
+* Logistic Regression 
+score: 77.13%
 
+* Decision Tree model
+score: 68%
+
+* Random Forest model
+score: 77.40%
+- feature importance
+ [(0.1686855604159887, 'koi_model_snr'),
+  (0.16162502363875983, 'koi_prad'),
+  (0.10905044931577702, 'koi_period'),
+  (0.10568093894563921, 'koi_impact'),
+  (0.10425958378206863, 'koi_depth'),
+  (0.10027461918949472, 'koi_duration'),
+  (0.09300511042263368, 'koi_insol'),
+  (0.07963441337955753, 'koi_teq'),
+  (0.07778430091008075, 'koi_time0bk')]
+
+
+## Conclusion
+Random Forest has the best score of 77.4%.  It is the best model based on my testing.
+Random Forest is useful to point out the top 2 most important features are "koi_model_snr" and "Koi_prad".
