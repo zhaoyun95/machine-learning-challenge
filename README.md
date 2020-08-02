@@ -14,7 +14,7 @@ https://www.kaggle.com/nasa/kepler-exoplanet-search-results
 ### column definition
 https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html
 
-
+### Results
 * svm model
 confirmed cases: precision = 38%; recall = 46%
 
