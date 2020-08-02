@@ -16,26 +16,26 @@ https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html
 
 ### Results
 * SVM model
-- score: 0.74 (linear kernel)
-- confirmed cases only
-  * kernel, precision, recall
-  * linear, 0.73, 0.90
-  * rbf, 0.53, 0.95  (can imporve to 0.60 with GridSearch)
-  * poly, 0.51, 0.95
+  - score: 0.74 (linear kernel)
+  - confirmed cases only
+    * kernel, precision, recall
+    * linear, 0.73, 0.90
+    * rbf, 0.53, 0.95  (can imporve to 0.60 with GridSearch)
+    * poly, 0.51, 0.95
 
 
 
 * Deep Learning model
-confirmed cases: loss = 70%; accuracy = 68%
+  * confirmed cases: loss = 70%; accuracy = 68%
 
 * Logistic Regression 
-score: 77.13%
+  * score: 77.13%
 
 * Decision Tree model
-score: 68%
+  * score: 68%
 
 * Random Forest model
-  score: 77.40%
+  * score: 77.40%
   - feature importance
     * [(0.1686855604159887, 'koi_model_snr'),
     * (0.16162502363875983, 'koi_prad'),
